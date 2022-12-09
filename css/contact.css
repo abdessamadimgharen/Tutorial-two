@@ -1,0 +1,181 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to right, #f5f4fb 0%, #f5f4fb 35% , #3729b2 35%, #3729b2 100%);
+}
+.contact::before {
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    left: 100px;
+    top: 16px;
+    background-color: #0fd89a;
+}
+.contact .contact-content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to right , #3729b2 31.2%, white 31.2%, white 100% );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.contact .contact-content::after {
+    content: '\f678';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    font-size: 130px;
+    color: #0fd89a;
+}
+.contact .contact-content .col {
+    width: calc((100% - 30px) / 3);
+}
+/* Start cool left  */
+.contact .contact-content .col.left {
+    padding: 30px;
+    color: white;
+}
+.contact .contact-content .col.left .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: #3729b2;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.contact .contact-content .col.left .lists {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: .8;
+}
+.contact .contact-content .col.left .lists button {
+    margin-bottom: 25px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.contact .contact-content .col.left .lists button:last-of-type {
+    background-color: rgba(255, 255, 255, 0.123);
+    padding: 7px 30px 7px 15px;
+    border-radius: 8px;
+}
+.contact .contact-content .col.left .lists button:hover {
+    background-color: rgba(255, 255, 255, 0.123);
+    padding: 7px 30px 7px 15px;
+    border-radius: 8px;
+}
+.contact .contact-content .col.left .info {
+    margin-top: 50px;
+}
+.contact .contact-content .col.left .info span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.486);
+}
+.contact .contact-content .col.left .info h3 {
+    margin: 5px 0;
+}
+.contact .contact-content .col.left .info p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.425);
+    line-height: 1.4;
+}
+.contact .contact-content .col.left .info a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* End cool left  */
+/* Start Middle */
+.contact .contact-content .col.middle h1 {
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.contact .contact-content .col.middle p {
+    font-weight: normal;
+    font-size: 25px;
+    padding-bottom: 20px;
+    width: 40%;
+    line-height: 1.5;
+    margin-top: 0;
+    color: #999;
+}
+.contact .contact-content .col.middle .infos input {
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 15px 25px;
+    width: 80%;
+}
+.contact .contact-content .col.middle .infos input:first-of-type {
+    border-bottom: 2px solid #aaa;
+}
+.contact .contact-content .col.middle .infos input:hover,
+.contact .contact-content .col.middle .infos input:focus {
+   border: none;
+   outline: none;
+    border-bottom: 2px solid #aaa;
+}
+.contact .contact-content .col.middle .infos  button {
+    background-color: transparent;
+    border: none;
+    color: #3729b2;
+    font-weight: bold;
+    padding: 30px 0 0 15px;
+}
+.contact .contact-content .col.middle .infos  button::before {
+    content: '\f1d8';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 8px;
+    font-size: 15px;
+}
+/* End Middle */
+/* Start Right  */
+.contact .contact-content .col.right  {
+    padding: 30px 50px 30px 10px;
+}
+.contact .contact-content .col.right h3 {
+    width: 80%;
+    line-height: 1.6;
+    font-weight: 900;
+}
+.contact .contact-content .col.right p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.contact .contact-content .col.right a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #3729b2;
+    font-size: 14px;
+}
+/* End Right  */
